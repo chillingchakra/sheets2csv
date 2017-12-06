@@ -26,3 +26,8 @@ Update: Succeeded in authenticating via SSH on OS X, now to get it working on th
 Had a setback and then a setforward today. Git messed everything up, I switched branches and I guess I was supposed to stash, when I returned, my files were permanently gone. My solution is simple, use freaking Google Drive, it does the managing for you and I can go back with revisions and whatnot.
 
 Now I also succeeded in getting csvmani.py to work somewhat. It prints out the whole array though, I still have to fix that.
+
+9:18 on 12-6
+
+There is only one category of things I know enough names in for it to be usable as variables in my python programming, and that is alcaholic beverages, so if you take a look at trimcsv.py, I have reverted to that for easier code auditing, both by myself and others.
+
