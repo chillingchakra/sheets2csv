@@ -3,17 +3,20 @@ import sys
 import os
 import glob
 # we are referencing the opening of the CSV as col, like America Online, CSV Online
-fname = './/csv-expo//R-SH1-R-BD-5.csv'
+fname = glob.glob('.//csv-expo//*.csv')
+
+str1 = ' '.join(fname)
 # fname = "C:/Users/nicholai/code/sheets2csv/csv-expo/*.csv"
 #for filename in glob.glob(fname):
 	#with open (filename, 'r') as f:
 		#for line in f:
+f_part = str1.split('-')
 #col = open(fname)
 outputty = open('output.csv','w')
 #This appears to be a function which reads the csv itself.
-f_part = fname.split('-')
+
 f_part[1]
-colu = open(fname)
+colu = open(str1)
 thecsv = csv.reader(colu)
 indexi=0
 colusOne=[]

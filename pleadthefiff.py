@@ -1,22 +1,15 @@
 import os
-
+import csv
 #folders = [".//csv-expo//*.csv"]
 
 path = './/csv-expo//'
+outputty = open('output.csv','w')
 for fname in os.listdir(path):
-        #print  filename
-        #str1 = ' '.join(fname)
-# fname = "C:/Users/nicholai/code/sheets2csv/csv-expo/*.csv"
-#for filename in glob.glob(fname):
-	#with open (filename, 'r') as f:
-		#for line in f:
+    #print  fname
+	#This appears to be a function which reads the csv itself.
+	colu = open(path+fname)
 	f_part = fname.split('-')
-#col = open(fname)
-	outputty = open('output.csv','w')
-#This appears to be a function which reads the csv itself.
-
 	f_part[1]
-	colu = open(fname)
 	thecsv = csv.reader(colu)
 	indexi=0
 	colusOne=[]
